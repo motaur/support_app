@@ -31,7 +31,7 @@ class _FlutterChatUiPageState extends State<FlutterChatUiPage> {
   final types.User _assistant = const types.User(
     id: 'assistant',
     firstName: 'AI Assistant',
-    imageUrl: 'http://localhost:3000/avatar',
+    // imageUrl: 'http://localhost:3000/avatar',
     role: types.Role.agent// Replace with your avatar URL
   );
 
