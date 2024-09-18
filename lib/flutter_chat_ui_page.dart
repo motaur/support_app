@@ -61,6 +61,8 @@ class _FlutterChatUiPageState extends State<FlutterChatUiPage> {
       final response = await http.post(
         Uri.parse(apiUrl),
         headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST',
           'Content-Type': 'application/json',
         },
         body: jsonEncode({
