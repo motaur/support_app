@@ -140,13 +140,16 @@ class _FlutterChatUiPageState extends State<FlutterChatUiPage> {
         ),
       ],
     ),
-    body: Chat(
-      messages: _messages,
-      onPreviewDataFetched: _handlePreviewDataFetched,
-      onSendPressed: _handleSendPressed,
-      showUserAvatars: true,
-      showUserNames: true,
-      user: _user,
+    body: Directionality(
+      textDirection: TextDirection.rtl,
+      child: Chat(
+        messages: _messages,
+        onPreviewDataFetched: _handlePreviewDataFetched,
+        onSendPressed: _handleSendPressed,
+        showUserAvatars: true,
+        showUserNames: true,
+        user: _user,
+      ),
     ),
   );
 }
